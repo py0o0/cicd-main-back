@@ -60,7 +60,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         // 자격 증명(예: 쿠키, 인증 헤더)을 포함한 요청을 허용 -> 세션 쿠키를 받겠다
         config.setAllowCredentials(true);
 
-
         String release_ip = env.getProperty("app.release_ip");
         String release_domain = env.getProperty("app.release_domain");
         String release_dev = env.getProperty("app.release_dev");
